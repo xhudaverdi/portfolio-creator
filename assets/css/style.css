@@ -7,11 +7,52 @@
 *{
     margin: 0%;
     padding: 0%;
-  text-transform: capitalize;
+  
     font-family: 'Roboto', sans-serif;
+ 
    
     
 
+}
+
+.overlay-menu{
+    background-color: #222;
+   
+    position: fixed;
+   width: 0;
+   overflow-x: hidden;
+   position: absolute;
+
+}
+.active{
+    width: 100%;
+}
+
+.right-side-overlay{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.overlay-menu a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 34px;
+    margin-top: 10px;
+    transition: all 0.2s  cubic-bezier(.87,.11,.9,.37);
+    transform: translateX(45px);
+    
+    
+    
+}
+.fa-xmark{
+    color: #ffff;
+    right: 3%;
+    position: absolute;
+    padding-top: 2%;
+    font-size: 30px;
+  
 }
 
 .header{
@@ -24,10 +65,13 @@
 
 }
 
-.fa-bars{
-    display: none !important;
-    cursor: pointer;
+
+.fa-bars-staggered{
+display: none !important;
+cursor: pointer;
 }
+    
+
 
 
 .right-side a{
@@ -43,7 +87,8 @@
 
 }
  a:hover{
-    color: red;
+    color:red;
+    
 }
 i:hover{
     color: red;
@@ -95,7 +140,7 @@ i:hover{
     display: flex;
     font-size: 15px;
     color: black;
-    margin-top: 2%;
+    margin-top: 10%;
     
     
 }
@@ -110,7 +155,7 @@ i:hover{
 
 .services-section h6{
     display: flex;
-  margin-top: 3%;
+  margin-top: 8%;
   justify-content: center;
   font-size: 15px; 
   font-family: 'Roboto';
@@ -123,12 +168,13 @@ color: #FF5E69;
 .services-section h1{
     display: flex;
     justify-content: center;
-    height: 119px;
+   
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 54px;
 line-height: 59px;
+padding-top: 20px;
 
 
 text-align: center;
@@ -136,29 +182,60 @@ letter-spacing: 1px;
 
 }
 .services-cards-section{
-    display: flex;
-    padding-left: 171px;
-    padding-right: 171px;
-    font-family: Roboto;
-    justify-content: space-around;
-    margin-top: 5%;
-    padding-top: 117.95;
+   display: flex;
+   justify-content: space-around;
+   padding-top: 117.95px;
+   font-size: 15px;
+   padding-left: 171px;
+   padding-right: 200px;
+    
+    
     
 
 
 }
-.services-section{
-    padding-right: 171px;
-    padding-left: 171px;
+.cards{
+    min-width: 152px;
+    
+    
     
 }
 .services-section ul{
     list-style-type: square;
     list-style-position: inside;
 }
+.cards h3 {
+    padding-top: 20px;
+}
+.cards p{
+padding-top: 15px;
+
+color: #666666;
+font-size: 15px;
+}
+ .cards ul{
+    padding-top: 15px;
+ }
 
 
+ .projects-section > h6{
+    color: #B16CEA;
+    text-transform: uppercase;
+letter-spacing: 4px;
+ }
 
+ .view-all-projects{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 113px;
+ }
+ .projects-card-section{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+ }
+ 
   
 
     
@@ -181,17 +258,22 @@ letter-spacing: 1px;
     .right-side{
         display: none;
     }
-    .fa-bars{
-        display: block;
+    .fa-bars-staggered{
+        display: block !important;
+        font-size: 28px;
     }
     
     
     }
-    @media(max-width:800px){
-        .right-side{
+    @media(max-width:1310px){
+        .section-portfolio{
+           padding-left: 60px;
+           padding-right: 60px;
          
         }
 
 
     }
+    @media
+    
     
